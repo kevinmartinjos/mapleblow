@@ -1,5 +1,5 @@
-Simple program that demonstrates vector addition. Our hero is a lonely maple leaf that is floating in the infinite vastness of nothingness
-There is no particular objective associated with the program. Click anywhere on the screen and an imaginary window pushes the maple leaf in the direction. Keep clicking and the wind gets stronger and stronger. The closer you click to the leaf
+Simple program that demonstrates vector addition. Our hero is a lonely maple leaf that is floating in the infinite vastness of nothingness.
+There is no particular objective associated with the program. Click anywhere on the screen and an imaginary wind pushes the maple leaf in the direction. Keep clicking and the wind gets stronger and stronger. The closer you click to the leaf
 the stronger the wind that blows.
 
 Libraries required : pygame wxwidgets
