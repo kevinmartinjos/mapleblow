@@ -1,0 +1,6 @@
+This file includes all the known glitches and the techniques used, if any, to circumvent them. 
+
+1.in file leaf.py, function collisin_check
+	under every if statement, there's a nested if of the form
+		if self.x+22>hurdle.x
+	This is used to check if the collision is taking place from the side of the hurdle or from its surface. The actual value should have 		been 24, but using that value resulted in certain glitches when collision occurs under high velocities. Under small velocities, however, 	the program worked as it was intended. Even 22 was an unacceptable value but increasing the frame rate from 30 to 50 seems to have solved 	the issue, at least superficially. Yet there occurs, although not frequently, a problem when the object is incident near to the edge of 		the hurdle and the program seems to have a problem deciding which velocity component to modify : horizontal or vertical.

@@ -1,0 +1,23 @@
+Okay here we go. The very first game. The basic idea will be to catch maple leaves that are falling down with a basket. 
+so what we require :
+A world file with the following classes :
+	1.wind : affects the direction of the leaf
+		Variables:
+			1.wind velocity : constant for the time being. 
+
+		functions: 
+			1.get_dir(self,leaf):The direction of wind is always from the point of left click to the 				leaf.Returns a vector.		
+	2.Hurdle:A class which defines the various obstacles encountered in the program.
+	
+The leaf class with the following Variables :
+	1.area : area of the leaf (imaginary)
+	2.terminal velocity : air resistance and such stuff
+	3.position co-ordinates
+	4.we assume the leaves are already at the terminal velocity=downward velocity
+	5.side ways velocity.
+	6.total velocity (make use of vectors)
+The leaf class contains the following functions :
+	1.render():Places the leaf in a particular position
+	2.fall() : Simlulates motion. initially only downward motion and sideways vel are 0
+	3.wind_effect(direction of wind): Does a vector addition to the velocity components of the leaves and 		retains that velocity as long as the mouse is pressed. 
+	4.collision_effect:To change the direction of the leaf once collided. Angle of incidence =angle of reflection. Find the angle between the velocity vector and the normal. v.j^=vjcos(theta). Therefore cos(theta)=(v.j^)/vj= y component of v/magnitude of v.
